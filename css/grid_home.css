@@ -1,0 +1,151 @@
+.subtitulo{
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 80px;
+}
+
+.destaques{
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+}
+
+.caixa{
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    background: rgba(0, 0, 0, .5);
+    color: #fdfdfdfd;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.destaques_principal{
+    background: url(../imgs/torcida1.jpg) center / cover no-repeat;
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+}
+
+.destaques_secundario:nth-child(2){
+    background: url(../imgs/flamengo-5.jpg) center / cover no-repeat;
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+.destaques_secundario:nth-child(3){
+    background: url(../imgs/flamengo-2.jpg) center / cover no-repeat;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+.destaques_secundario:nth-child(4){
+    background: url(../imgs/flamengo-4.jpg) center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+.destaques_secundario:nth-child(5){
+    background: url(../imgs/flamengo-3.jpg) center / cover no-repeat;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+
+.historia{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns:  33.33% 33.33% 33.33%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(150vh);
+}
+
+.destaques_histoia1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+}
+
+.destaques_historia2{
+    background: url(../imgs/sede-flamengo.jpg) center / cover no-repeat;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.destaques_historia3{
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+}
+
+.destaques_historia4{
+    background: url(../imgs/camisa-1.jpg) center / cover no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+
+.historia_descricao5{
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+}
+
+.destaques_historia6{
+    background: url(../imgs/flamengo-clube-1.jpg) center / cover no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+}
+
+.destaques_historia7{
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+}
+
+.destaques_historia8{
+    background: url(../imgs/flamengo-remo.jpg) center / cover no-repeat;
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+}
+
+.destaques_historia9{
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+}
+
+.historia_lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.historia_item{
+    background: #424242;
+    border-left: 5px solid transparent;
+    color: #fff;
+    display: flex;
+    padding: 1rem 50px;
+    width: 100%;
+    font-size: 20px;
+    word-break: break-all;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-family: Laila;
+}
+
+.historia_item h1{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.historia_item h2{
+    font-size: 1rem
+}
+
+.historia_link{
+    color: inherit; 
+    text-decoration: none;
+}
