@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Fã Clube do Flamengo">
+	<meta name="keywords" content="Historia, Clube, Curiosidades do Flamengo">
+	<meta name="author" content="Dario Kruger Junior">
+	<meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/grid_socio.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Laila&display=swap" rel="stylesheet">
+	<script src="../js/site.js"></script>
+	<title>Clube de Regatas do Flamengo - Socio Torcedor</title>
+</head>
+<body class="app">
+    <header class="cabecalho">
+        <nav class="menu">
+			<ul class="menu_image">
+				<li>
+					<a class="menu_link" href="home.html">                        
+						<img src="../imgs/logo-flamengo-2.png" alt="Logo Mascote do Flamengo">
+					</a>
+				</li>
+			</ul>
+            <ul class="menu_lista">
+				<li class="menu_item"></li>
+				<h3 class="menu_redes">Saiba mais sobre o Flamengo<h3>
+					<a class="menu_link" href="home.html">                        
+						Clube de Regatas do Flamengo
+					</a>
+					<a class="menu_link">                        
+							|
+					</a>
+                    <a class="menu_link sub" href="home.html">
+                        Home
+                    </a>
+                    <a class="menu_link sub" href="produtos.html">                        
+                        Produtos</a>
+                    <a class="menu_link ativo sub" href="contato.html">                       
+                        Contato
+					</a>	
+					<a href="https://www.youtube.com/user/flamengo"><img src="../imgs/logo-youtube.png" alt="Logo-Youtube"></a>					
+					<a href="https://www.instagram.com/flamengo/"><img src="../imgs/logo-instagram.png" alt="Logo-Instagram"></a>
+					<a href="https://pt-br.facebook.com/FlamengoOficial/"><img src="../imgs/logo-facebook.png" alt="Logo-Facebook"></a>
+				</li>
+			</ul>
+        </nav>
+	</header>
+	<main class="conteudo_pages">
+		<section class="contato">
+			<div class="contato_principal caixa">
+				<form class="formulario" name="meuForm" method="post" id="formulario" onsubmit="return validaContato()">
+					<div class="box"> 
+						<h1>Dados Socio-Torcedor :</h1>
+				  
+						<label> 
+							<span>Nome :</span>
+							<input type="text" class="input_text" name="nome" id="name" placeholder="Digite seu nome..."/>
+						</label>
+				  
+						<label>
+							<span>Email :</span>
+							<input type="email" class="input_text" name="email" id="email" placeholder="exemplo@exemplo.com" />
+						</label>
+						 
+						<label>
+							<span>Telefone :</span>
+							<input type="text" class="input_text" name="telefone" id="subject" placeholder="Ex.: (00) 00000-0000" />
+						</label>
+				
+						<label>
+							<span>Calendario :</span>
+							<input type="date" class="input_text" name="calendario" id="subject" />
+						</label>
+				
+						<label>
+							<span class="span_sexo" >Sexo</span>
+							<input type="radio" class="input_radio" name="sexo" value="male"> Masculino<br>
+							<input type="radio" class="input_radio" name="sexo" value="female"> Feminino<br>
+							<input type="radio" class="input_radio" name="sexo" value="other"> Outros<br>
+						</label>
+
+                        <label>
+							<span>Tipo do Socio :</span>
+                                <select class="select_type">
+                                  <option type="typeSocio" name="typeSocio" id="typeSocio" value="1">Basico</option>
+                                  <option type="typeSocio" name="typeSocio" id="typeSocio" value="2">Padrão</option>
+                                  <option type="typeSocio" name="typeSocio" id="typeSocio" value="3">Premium</option>
+                                </select>
+						</label>
+				
+						<label>
+							<input type="checkbox" id="checkbox" class="input_chekbox" name="checkbox" value="" onchange="createButtonEnviar(this.value)"> Deseja receber emails de promoções e novidades?
+                        </label>
+                        <input type="reset" class="button reset" value="Limpar" />
+                        <input type="submit" class="button enviar" value="Enviar" />
+					</div>
+				</form> 
+			</div>
+		</section>
+	</main>
+	<footer class="rodape">Todos os direitos reservados &copy; 2022</footer>
+</body>
+</html>
