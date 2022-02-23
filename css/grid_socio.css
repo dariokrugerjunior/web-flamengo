@@ -1,0 +1,133 @@
+.contato{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    height: calc(140vh);
+}
+
+.contato_principal{
+    background: url(../imgs/fundo-form.jpg) right / cover no-repeat;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/*======================== formulario =================================*/
+
+div.box {
+    margin:50px auto;
+    width:500px;
+    background:#585858;
+    position:relative;
+    top:50px;
+    border-radius: 15px;
+}
+ 
+div.box h1 { 
+    font-weight: 900;
+    font-family: laila;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #161712;
+}
+ 
+div.box label {
+    width: 100%;
+    color: #fff;
+    font-family: laila;
+    display: block;
+    background: rgb(39, 39, 39);
+    border-top: 1px solid #161712;
+    padding: 10px 0 10px 0;
+}
+
+div.box label:nth-child(8){
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+ 
+div.box label span {
+    text-align: left;
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    float: left;
+    width: 100px;
+    padding: 10px 20px 0px 15px;
+    font-weight: 900;
+}
+ 
+div.box .input_text {
+    padding:10px 10px;
+    width:300px;
+    border-radius: 15px;
+}
+
+div.box .select_type{
+    padding:10px 10px;
+    width:320px;
+    border-radius: 15px;
+}
+ 
+div.box .message{
+    width:315px;
+    border-radius: 15px;
+    overflow:hidden;
+    height:120px;
+    resize: none;
+}
+ 
+.button{
+    margin: 0 0 20px 0;
+    padding: 10px 10px;
+    position: relative;
+    top: 10px;
+    width: 155px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: laila;
+    font-weight: 900;
+    font-size: .9rem;
+    opacity: 1;
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 45px;
+}
+
+.enviar{
+    background:rgb(72, 180, 108);
+    border-bottom: 1px double rgb(72, 180, 108);
+    border-top: 1px double rgb(72, 180, 108);
+    border-left:1px double rgb(72, 180, 108);
+    border-right:1px double rgb(72, 180, 108);
+}
+
+.reset{
+    background:rgb(187, 32, 32);
+    border-bottom: 1px double rgb(187, 32, 32);
+    border-top: 1px double rgb(187, 32, 32);
+    border-left:1px double rgb(187, 32, 32);
+    border-right:1px double rgb(187, 32, 32);
+    margin-left: 90px;
+}
+
+.span_sexo{
+    margin: 10px 0 25px 0;
+}
+
+.input_chekbox{
+    margin-left: 15px;
+}
+
+::placeholder{
+    padding-left: 10px;
+}
