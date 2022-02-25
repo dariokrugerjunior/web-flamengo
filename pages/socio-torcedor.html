@@ -69,10 +69,15 @@
 							<span>Telefone :</span>
 							<input type="text" class="input_text" name="telefone" id="subject" placeholder="Ex.: (00) 00000-0000" />
 						</label>
+
+						<label>
+							<span>CPF :</span>
+							<input type="text" class="input_text" name="cpf" id="subject" placeholder="Ex.: 000.000.000-00" />
+						</label>
 				
 						<label>
-							<span>Calendario :</span>
-							<input type="date" class="input_text" name="calendario" id="subject" />
+							<span>Nascimento:</span>
+							<input type="date" class="input_text" name="nascimento" id="subject" />
 						</label>
 				
 						<label>
@@ -92,10 +97,13 @@
 						</label>
 				
 						<label>
-							<input type="checkbox" id="checkbox" class="input_chekbox" name="checkbox" value="" onchange="createButtonEnviar(this.value)"> Deseja receber emails de promoções e novidades?
+							<input type="checkbox" id="checkbox" class="input_chekbox" name="checkbox" value=""> Deseja receber emails de promoções e novidades?
                         </label>
                         <input type="reset" class="button reset" value="Limpar" />
-                        <input type="submit" class="button enviar" value="Enviar" />
+
+                        <input id="button" type="submit" class="button enviar" value="Enviar" />
+						<!-- jQuery --><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+						<script src="../js/script.js"></script>
 					</div>
 				</form> 
 			</div>
